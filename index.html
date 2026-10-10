@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="BiteRush — your neighbourhood's best food, delivered fast."
+      />
+      <title>BiteRush — Good food. No waiting.</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="announcement">
+         <span class="pulse-dot"></span> FREE DELIVERY on your first order
+         <span class="announcement-code">USE: FIRSTBITE</span
+         ><button class="announcement-close" aria-label="Dismiss announcement">
+            ×
+         </button>
+      </div>
+      <header class="site-header">
+         <a class="brand" href="#top" aria-label="BiteRush home"
+            ><span class="brand-mark">b<span>!</span></span
+            ><span>bite<span class="brand-rush">rush</span></span></a
+         >
+         <nav class="main-nav" id="mainNav">
+            <a class="active" href="#menu">Order food</a
+            ><a href="#how">How it works</a><a href="#perks">Why BiteRush</a>
+         </nav>
+         <div class="header-actions">
+            <button class="location-button" id="locationButton">
+               <span class="location-pin">⌖</span
+               ><span
+                  ><small>Delivering to</small
+                  ><strong id="locationText">Kanhangad, Kerala</strong></span
+               ><span class="chevron">⌄</span></button
+            ><button class="cart-button" id="openCart">
+               <span class="cart-icon">▱</span
+               ><span class="cart-label">Your bag</span
+               ><span class="cart-count" id="cartCount">0</span></button
+            ><button
+               class="mobile-menu"
+               id="mobileMenu"
+               aria-label="Open navigation"
+            >
+               ☰
+            </button>
+         </div>
+      </header>
+
+      <main id="top">
+         <section class="hero">
+            <div class="hero-copy">
+               <div class="eyebrow">
+                  <span class="eyebrow-line"></span> GOOD FOOD, GREAT MOOD
+               </div>
+               <h1>Your cravings.<br /><em>Our mission.</em></h1>
+               <p class="hero-description">
+                  From comfort classics to little-known local gems — the good
+                  stuff is closer than you think.
+               </p>
+               <form class="search-bar" id="searchForm">
+                  <span class="search-symbol">⌕</span
+                  ><input
+                     id="searchInput"
+                     type="search"
+                     placeholder="What are you craving today?"
+                     aria-label="Search food"
+                  /><button type="submit">Find food <span>↗</span></button>
+               </form>
+               <div class="hero-meta">
+                  <div class="avatar-stack">
+                     <img
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=faces"
+                        alt="Customer"
+                     /><img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=faces"
+                        alt="Customer"
+                     /><img
+                        src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop&crop=faces"
+                        alt="Customer"
+                     />
+                  </div>
+                  <div>
+                     <strong>4.9/5 <span class="stars">★★★★★</span></strong
+                     ><small>Loved by 12k+ hungry people</small>
+                  </div>
+               </div>
+            </div>
+            <div class="hero-art">
+               <div class="hero-image-main">
+                  <img
+                     src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000&h=1100&fit=crop"
+                     alt="Juicy burger with fresh toppings"
+                  />
+               </div>
+               <div class="hero-sticker">
+                  <span class="sticker-top">HOT & FRESH</span
+                  ><span class="sticker-icon">✳</span
+                  ><span class="sticker-bottom">STRAIGHT TO YOU</span>
+               </div>
+               <div class="delivery-bubble">
+                  <span class="delivery-bubble-icon">⚡</span>
+                  <div>
+                     <strong>25–35 min</strong><small>at your doorstep</small>
+                  </div>
+               </div>
+               <div class="hero-scribble">YUM!</div>
+            </div>
+            <div class="hero-bottom-note">
+               <span>01 / 03</span><span class="note-rule"></span
+               ><span>MADE FOR THE MOMENT</span>
+            </div>
+         </section>
+
+         <section class="category-section" id="menu">
+            <div class="section-heading">
+               <div>
+                  <div class="eyebrow">THE GOOD STUFF</div>
+                  <h2>What sounds <em>good?</em></h2>
+               </div>
+               <a class="text-link" href="#restaurants"
+                  >Explore all food <span>↗</span></a
+               >
+            </div>
+            <div class="category-list" id="categoryList">
+               <button class="category-pill active" data-category="All">
+                  <span class="category-emoji">✳</span><span>Everything</span>
+               </button>
+               <button class="category-pill" data-category="Burgers">
+                  <span class="category-emoji">🍔</span><span>Burgers</span>
+               </button>
+               <button class="category-pill" data-category="Pizza">
+                  <span class="category-emoji">🍕</span><span>Pizza</span>
+               </button>
+               <button class="category-pill" data-category="Asian">
+                  <span class="category-emoji">🍜</span><span>Asian</span>
+               </button>
+               <button class="category-pill" data-category="Indian">
+                  <span class="category-emoji">🍛</span><span>Indian</span>
+               </button>
+               <button class="category-pill" data-category="Desserts">
+                  <span class="category-emoji">🍰</span><span>Desserts</span>
+               </button>
+               <button class="category-pill" data-category="Healthy">
+                  <span class="category-emoji">🥗</span
+                  ><span>Fresh & healthy</span>
+               </button>
+            </div>
+         </section>
+
+         <section class="menu-section" id="restaurants">
+            <div class="menu-topline">
+               <div>
+                  <div class="eyebrow">HAND-PICKED FOR YOU</div>
+                  <h2>Today's <em>favourites.</em></h2>
+               </div>
+               <div class="sort-control">
+                  <span>Sort by</span
+                  ><select id="sortSelect" aria-label="Sort food">
+                     <option value="popular">Most popular</option>
+                     <option value="rating">Top rated</option>
+                     <option value="price-low">Price: low to high</option>
+                     <option value="price-high">Price: high to low</option>
+                  </select>
+               </div>
+            </div>
+            <div class="food-grid" id="foodGrid"></div>
+            <div class="empty-state" id="emptyState" hidden>
+               <span>🥄</span>
+               <h3>No bites found.</h3>
+               <p>Try another search or category.</p>
+               <button id="resetFilters">Show everything</button>
+            </div>
+         </section>
+
+         <section class="promo-band" id="perks">
+            <div class="promo-art">
+               <img
+                  src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&h=650&fit=crop"
+                  alt="Crispy fries and burger"
+               /><span class="promo-burst">BIG<br />HUNGER<br />ENERGY</span>
+            </div>
+            <div class="promo-copy">
+               <div class="eyebrow">A LITTLE EXTRA, ON US</div>
+               <h2>Good food.<br /><em>Better deals.</em></h2>
+               <p>
+                  First order? We've got you. Get 20% off your first BiteRush
+                  order, because every great food story deserves a tasty start.
+               </p>
+               <div class="coupon-row">
+                  <span class="coupon-code">FIRSTBITE20</span
+                  ><button id="copyCoupon">Copy code <span>↗</span></button>
+               </div>
+               <small class="promo-fineprint"
+                  >*Demo offer · Terms may apply</small
+               >
+            </div>
+         </section>
+
+         <section class="how-section" id="how">
+            <div class="section-heading">
+               <div>
+                  <div class="eyebrow">NO DRAMA. JUST DINNER.</div>
+                  <h2>Three steps to <em>happy.</em></h2>
+               </div>
+               <p>
+                  Less scrolling, more munching.<br />That's the BiteRush
+                  promise.
+               </p>
+            </div>
+            <div class="steps-grid">
+               <article class="step-card">
+                  <span class="step-number">01</span>
+                  <div class="step-icon step-icon-red">⌕</div>
+                  <h3>Pick your craving</h3>
+                  <p>
+                     Find the food that makes your day. Local legends and
+                     familiar favourites, all in one place.
+                  </p>
+                  <span class="step-arrow">↘</span>
+               </article>
+               <article class="step-card">
+                  <span class="step-number">02</span>
+                  <div class="step-icon step-icon-yellow">▱</div>
+                  <h3>Make it yours</h3>
+                  <p>
+                     Add your favourites to the bag. A few taps and your next
+                     great meal is on its way.
+                  </p>
+                  <span class="step-arrow">↘</span>
+               </article>
+               <article class="step-card">
+                  <span class="step-number">03</span>
+                  <div class="step-icon step-icon-green">⚡</div>
+                  <h3>Eat. Smile. Repeat.</h3>
+                  <p>
+                     Track the rush and get ready to dig in. Your sofa has never
+                     looked so good.
+                  </p>
+                  <span class="step-arrow">↘</span>
+               </article>
+            </div>
+         </section>
+
+         <section class="app-cta">
+            <div class="cta-spark">✳</div>
+            <div>
+               <div class="eyebrow">YOUR NEXT FAVOURITE MEAL AWAITS</div>
+               <h2>Hungry? Let's <em>fix that.</em></h2>
+               <p>Great food is just a few taps away.</p>
+            </div>
+            <a href="#menu" class="cta-button">Find your food <span>↗</span></a>
+         </section>
+      </main>
+
+      <footer class="site-footer">
+         <div class="footer-main">
+            <a class="brand footer-brand" href="#top"
+               ><span class="brand-mark">b<span>!</span></span
+               ><span>bite<span class="brand-rush">rush</span></span></a
+            >
+            <p>Good food, good people,<br />good things happening.</p>
+            <div class="footer-links">
+               <a href="#menu">Explore menu</a><a href="#how">How it works</a
+               ><a href="#perks">Offers</a
+               ><a href="mailto:hello@biterush.example">Say hello</a>
+            </div>
+            <div class="social-links">
+               <a href="#top" aria-label="Instagram">ig</a
+               ><a href="#top" aria-label="TikTok">tk</a
+               ><a href="#top" aria-label="Facebook">fb</a>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <span>© 2026 BiteRush. Made for the hungry.</span
+            ><span>Good food, delivered with love <b>♥</b></span>
+         </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+      <aside
+         class="cart-drawer"
+         id="cartDrawer"
+         aria-label="Your bag"
+         aria-hidden="true"
+      >
+         <div class="drawer-header">
+            <div>
+               <span class="eyebrow">THE GOOD STUFF</span>
+               <h2>Your <em>bag.</em></h2>
+            </div>
+            <button class="close-drawer" id="closeCart" aria-label="Close bag">
+               ×
+            </button>
+         </div>
+         <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+               <span>🥡</span>
+               <h3>Your bag is taking a nap.</h3>
+               <p>Add a little deliciousness to wake it up.</p>
+               <button id="startOrdering">Browse food</button>
+            </div>
+         </div>
+         <div class="cart-summary" id="cartSummary" hidden>
+            <div class="summary-line">
+               <span>Subtotal</span><strong id="subtotalValue">₹0</strong>
+            </div>
+            <div class="summary-line">
+               <span>Delivery</span><strong class="free-delivery">FREE</strong>
+            </div>
+            <div class="summary-line total-line">
+               <span>Total</span><strong id="totalValue">₹0</strong>
+            </div>
+            <button class="checkout-button" id="checkoutButton">
+               Place demo order <span>↗</span></button
+            ><small>Demo only — no payment will be collected.</small>
+         </div>
+      </aside>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      <dialog class="location-dialog" id="locationDialog">
+         <form method="dialog">
+            <button class="dialog-close" aria-label="Close">×</button>
+            <div class="eyebrow">YOUR NEIGHBOURHOOD</div>
+            <h2>Where's the <em>good food</em> going?</h2>
+            <p>Set your delivery area to see what's cooking near you.</p>
+            <label for="locationInput">Town or area</label
+            ><input
+               id="locationInput"
+               value="Kanhangad, Kerala"
+               maxlength="70"
+               required
+            /><button class="save-location" id="saveLocation" type="button">
+               Update location <span>↗</span>
+            </button>
+         </form>
+      </dialog>
+      <dialog
+         class="order-dialog"
+         id="orderDialog"
+         aria-labelledby="orderTitle"
+      >
+         <form method="dialog">
+            <button class="dialog-close" aria-label="Close">×</button>
+            <div class="eyebrow">ORDER CONFIRMED</div>
+            <h2 id="orderTitle">That's a <em>wrap.</em></h2>
+            <p>Your demo order is in. No payment was collected.</p>
+            <div class="order-details">
+               <div>
+                  <span>Order number</span><strong id="orderNumber"></strong>
+               </div>
+               <div>
+                  <span>Items</span><strong id="orderItemCount"></strong>
+               </div>
+               <div><span>Total</span><strong id="orderTotal"></strong></div>
+            </div>
+            <button class="save-location" type="submit">
+               Continue browsing
+            </button>
+         </form>
+      </dialog>
+      <script src="script.js"></script>
+   </body>
+</html>
